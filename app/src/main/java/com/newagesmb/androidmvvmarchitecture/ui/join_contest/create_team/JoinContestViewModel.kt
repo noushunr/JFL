@@ -417,6 +417,39 @@ class JoinContestViewModel @Inject constructor(
         if (teamList.isNotEmpty())
             setCaptains()
     }
+    fun clearSelectedPlayers(){
+        val players = selectedPlayersList.groupBy { it.posId }
+        removedId.clear()
+        selectedPlayersList.forEach {
+            removedId.add(it.id)
+        }
+        players.forEach{posId,list->
+            val playersList = playerDataCache[posId]?.toMutableList()
+            playersList?.forEachIndexed {index,it->
+
+                val updatedPlayer = it.copy(
+                    player = it.player?.copy(
+                        isSelected = false,
+                        posId = posId,
+                        teamCode = it.team?.teamCode ?: ""
+                    )
+                )
+                playersList[index]=updatedPlayer
+
+            }
+            playerDataCache[posId] = playersList?.toMutableList()!!
+//            updatePlayerList(posId,playersList?.toList()!!)
+        }
+        playerTypesList.forEachIndexed{index, playerTypes ->
+            val updatedPlayer = playerTypes.copy(
+                roleCode = "${playerTypes.roleCode?.replace(Regex("\\(.*?\\)"), "")}", role = playerTypesList[index].role, id = playerTypesList[index].id)
+            playerTypesList[index] = updatedPlayer
+        }
+
+        selectedPlayersList.clear()
+        maxReachedTeamIds.clear()
+        isCriteriaSatisfied = false
+    }
     fun setCaptains(){
         val hasCaptain = selectedPlayersList.any { it.isCaptain == 1 }
         val hasViceCaptain = selectedPlayersList.any { it.isViceCaptain == 1 }

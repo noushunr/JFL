@@ -125,6 +125,8 @@ fun TeamPreviewScreen(navController: NavHostController, joinContestViewModel: Jo
                         joinContestViewModel.isLoading = false
                         if (it.data?.success!!){
                             isCreated = true
+                        } else {
+                            context?.showToast(it.data.message)
                         }
 
 

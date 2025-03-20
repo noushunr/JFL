@@ -184,6 +184,27 @@ fun CreateTeamScreen(tournamentId : Int =0,tournamentType : Int =0,tournamentPri
                         )
                     }
 
+                    if (joinContestViewModel.teamList.isNotEmpty()){
+                        Text(
+                            text = stringResource(id = R.string.reset),
+                            color = Color.White,
+                            fontSize = 16.sp,
+                            fontFamily = FontFamily(
+                                Font(R.font.roboto_regular)
+                            ),
+//                fontFamily = customFontFamily,
+                            modifier = Modifier.padding(
+
+                                top = 10.dp,
+                                bottom = 10.dp
+                            ).clickable {
+                                joinContestViewModel.clearSelectedPlayers()
+                            }
+                        )
+                    }
+
+
+
 //                    Column(
 //                        modifier = Modifier
 //                            .padding(top = 10.dp),
