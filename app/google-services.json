@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "447866084721",
+    "project_id": "androidarchitecture-214e8",
+    "storage_bucket": "androidarchitecture-214e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447866084721:android:61f0be62c0418a5f392ad0",
+        "android_client_info": {
+          "package_name": "com.jfl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447866084721-glu60r0kniafp12rc6fgc6a5crb5hu5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnhSN9ZXqygYhOg2cLiKMniaum1SOa4uc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447866084721-glu60r0kniafp12rc6fgc6a5crb5hu5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

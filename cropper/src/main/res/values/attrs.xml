@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ReadMoreTextView">
+        <attr name="trimExpandedText" format="string" />
+        <attr name="trimCollapsedText" format="string" />
+        <attr name="trimLength" format="integer" />
+        <attr name="showTrimExpandedText" format="boolean" />
+        <attr name="colorClickableText" format="color" />
+        <attr name="trimLines" format="integer" />
+        <attr name="trimMode">
+            <enum name="trimModeLine" value="0" />
+            <enum name="trimModeLength" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CropImageView">
+        <attr name="cropGuidelines">
+            <enum name="off" value="0" />
+            <enum name="onTouch" value="1" />
+            <enum name="on" value="2" />
+        </attr>
+        <attr name="cropScaleType">
+            <enum name="fitCenter" value="0" />
+            <enum name="center" value="1" />
+            <enum name="centerCrop" value="2" />
+            <enum name="centerInside" value="3" />
+        </attr>
+        <attr name="cropShape">
+            <enum name="rectangle" value="0" />
+            <enum name="oval" value="1" />
+        </attr>
+
+        <attr name="cropAutoZoomEnabled" format="boolean" />
+        <attr name="cropMaxZoom" format="integer" />
+        <attr name="cropMultiTouchEnabled" format="boolean" />
+        <attr name="cropFixAspectRatio" format="boolean" />
+        <attr name="cropAspectRatioX" format="integer" />
+        <attr name="cropAspectRatioY" format="integer" />
+        <attr name="cropInitialCropWindowPaddingRatio" format="float" />
+        <attr name="cropBorderLineThickness" format="dimension" />
+        <attr name="cropBorderLineColor" format="color" />
+        <attr name="cropBorderCornerThickness" format="dimension" />
+        <attr name="cropBorderCornerOffset" format="dimension" />
+        <attr name="cropBorderCornerLength" format="dimension" />
+        <attr name="cropBorderCornerColor" format="color" />
+        <attr name="cropGuidelinesThickness" format="dimension" />
+        <attr name="cropGuidelinesColor" format="color" />
+        <attr name="cropBackgroundColor" format="color" />
+        <attr name="cropSnapRadius" format="dimension" />
+        <attr name="cropTouchRadius" format="dimension" />
+        <attr name="cropSaveBitmapToInstanceState" format="boolean" />
+        <attr name="cropShowCropOverlay" format="boolean" />
+        <attr name="cropShowProgressBar" format="boolean" />
+        <attr name="cropMinCropWindowWidth" format="dimension" />
+        <attr name="cropMinCropWindowHeight" format="dimension" />
+        <attr name="cropMinCropResultWidthPX" format="float" />
+        <attr name="cropMinCropResultHeightPX" format="float" />
+        <attr name="cropMaxCropResultWidthPX" format="float" />
+        <attr name="cropMaxCropResultHeightPX" format="float" />
+        <attr name="cropFlipHorizontally" format="boolean" />
+        <attr name="cropFlipVertically" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RangeSeekBar">
+        <attr name="rsb_trackColor" format="color" />
+        <attr name="rsb_trackSelectedColor" format="color" />
+        <attr name="rsb_trackThickness" format="dimension" />
+        <attr name="rsb_sidePadding" format="dimension" />
+        <attr name="rsb_touchRadius" format="dimension" />
+        <attr name="rsb_trackSelectedThickness" format="dimension" />
+        <attr name="rsb_minThumbOffsetVertical" format="dimension" />
+        <attr name="rsb_maxThumbOffsetVertical" format="dimension" />
+        <attr name="rsb_minThumbOffsetHorizontal" format="dimension" />
+        <attr name="rsb_maxThumbOffsetHorizontal" format="dimension" />
+        <attr name="rsb_minThumbDrawable" format="reference" />
+        <attr name="rsb_maxThumbDrawable" format="reference" />
+        <attr name="rsb_minRange" format="integer" />
+        <attr name="rsb_max" format="integer" />
+        <attr name="rsb_initialMinThumbValue" format="integer" />
+        <attr name="rsb_initialMaxThumbValue" format="integer" />
+        <attr name="rsb_trackRoundedCaps" format="boolean" />
+        <attr name="rsb_trackSelectedRoundedCaps" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="LoadingButton">
+        <attr name="lb_btnColor" format="reference|color" />
+        <attr name="lb_btnText" format="reference|string" />
+        <attr name="lb_textColor" format="reference|string" />
+        <attr name="lb_textStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+        </attr>
+        <attr name="lb_setAllCapz" format="enum">
+            <enum name="capital" value="1" />
+            <enum name="normal" value="0" />
+        </attr>
+        <attr name="lb_resetAfterFailed" format="boolean" />
+        <attr name="lb_btnRippleColor" format="reference|color" />
+        <attr name="lb_btnRippleAlpha" format="float" />
+    </declare-styleable>
+</resources>
